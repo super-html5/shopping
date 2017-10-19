@@ -28,7 +28,7 @@
   </div>
 </div>
 
-<div class="showAll" *ngIf="isSelected">
+<div class="showAll" *ngIf="isSelected" [@flyInOut]="'in'">
   <div class="row mx-0 showAll-title">
     <div class="col-6">全部分类</div>
     <div class="col-4 text-right pr-0 mr-0" (click)="onIsSelected()">

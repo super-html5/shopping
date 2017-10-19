@@ -1,30 +1,11 @@
 import {Component, OnInit} from '@angular/core';
-
-import {
-  trigger,
-  state,
-  style,
-  animate,
-  transition
-} from '@angular/animations';
+import {flyInOut} from '../../currency-animations';
 
 @Component({
   selector: 'app-details',
   templateUrl: './details.component.html',
   styleUrls: ['./details.component.scss'],
-  animations: [
-    trigger('flyInOut', [
-      state('in', style({transform: 'translateY(0)'})),
-      transition('void => *', [
-        style({transform: 'translateY(100%)'}),
-        animate(100)
-      ]),
-      transition('* => void', [
-        animate(100, style({transform: 'translateY(100%)'}))
-      ])
-    ])
-  ]
-
+  animations: [flyInOut]
 })
 export class DetailsComponent implements OnInit {
 

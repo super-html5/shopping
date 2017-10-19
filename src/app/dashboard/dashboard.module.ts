@@ -5,7 +5,6 @@ import {DashboardRoutingModule} from './dashboard-routing.module';
 
 import {IndexComponent} from './index/index.component';
 import {BannerListComponent} from './banner-list/banner-list.component';
-import {FooterComponent} from './footer/footer.component';
 import {DetailsComponent} from './details/details.component';
 import { CurrencyDirective } from './currency.directive';
 
@@ -18,7 +17,6 @@ import { CurrencyDirective } from './currency.directive';
   declarations: [
     IndexComponent,
     BannerListComponent,
-    FooterComponent,
     DetailsComponent,
     CurrencyDirective
   ]
