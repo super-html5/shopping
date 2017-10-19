@@ -7,6 +7,7 @@ import {IndexComponent} from './index/index.component';
 import {BannerListComponent} from './banner-list/banner-list.component';
 import {DetailsComponent} from './details/details.component';
 import { CurrencyDirective } from './currency.directive';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   imports: [
@@ -18,7 +19,8 @@ import { CurrencyDirective } from './currency.directive';
     IndexComponent,
     BannerListComponent,
     DetailsComponent,
-    CurrencyDirective
+    CurrencyDirective,
+    SearchComponent
   ]
 })
 export class DashboardModule {
