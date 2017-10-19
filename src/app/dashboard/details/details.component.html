@@ -1,0 +1,131 @@
+<ul class="nav nav-fill bg-white">
+  <li class="nav-item">
+    <a class="nav-link active"
+       role="tab"
+       data-toggle="tab"
+       href="#details"
+       aria-controls="details"
+       id="details-tab"
+       aria-expanded="true"
+    >商品详情</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link"
+       role="tab"
+       data-toggle="tab"
+       href="#params"
+       aria-controls="params"
+       id="params-tab"
+    >参数规格</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link"
+       role="tab"
+       data-toggle="tab"
+       href="#notice"
+       aria-controls="notice"
+       id="notice-tab"
+    >购买须知</a>
+  </li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane fade show active bg-white"
+       id="details"
+       role="tabpanel"
+       aria-labelledby="details-tab"
+  >
+    <div class="row">
+      <div class="col-12">
+        <img class="img-fluid w-100" src="../assets/img/details/details-one.png"/>
+      </div>
+    </div>
+    <div class="row mx-0 mt-3">
+      <div class="col-12">
+        <h6>[一品太白] 藏香猪肉 天然有机无污染</h6>
+      </div>
+    </div>
+    <div class="row mx-0">
+      <div class="col-4 text-danger">
+        ¥<span>100.00</span>元
+      </div>
+      <div class="col-4 pl-0 text-secondary line-through">
+        ¥<span>200.00</span>元
+      </div>
+      <div [appCurrency]="_AuthStyleClassName" class="col-4 text-right pr-4 small" style="line-height: 2">
+        <i class="fa fa-heart" aria-hidden="true"></i>&nbsp;收藏
+      </div>
+    </div>
+    <div class="row mx-0 mt-3 pb-1 text-center text-secondary small">
+      <div class="col-4">
+        运费：<span>免运费</span>
+      </div>
+      <div class="col-4">
+        库存：<span>999</span>
+      </div>
+      <div class="col-4">
+        销量：<span>2346</span>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade"
+       id="params"
+       role="tabpanel"
+       aria-labelledby="params-tab"
+  >参数规格
+  </div>
+  <div class="tab-pane fade"
+       id="notice"
+       role="tabpanel"
+       aria-labelledby="notice-tab"
+  >购买须知
+  </div>
+</div>
+
+
+<div class="row bg-white" [@flyInOut]="'in'" *ngIf="isPlaceOrder"
+     style="position: absolute; bottom: 3.5rem; z-index: 2">
+  <div class="col-12">
+    <div class="media p-2">
+      <img class="d-flex mr-3 w-40" src="../assets/img/details/details-one.png" alt="Generic placeholder image">
+      <div class="media-body pt-4">
+        <span class="text-danger">
+          ¥<span>100</span>&nbsp;&nbsp;
+        </span>
+        <span class="line-through text-secondary">
+          ¥<span>200</span>
+        </span>
+        <br>
+        <span class="small">库存：<span>2346</span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <hr class="w-100 pt-0 mt-0" style="border-bottom: 1px solid #eeeeee">
+  <div class="col-6 pl-5">
+    购买数量
+  </div>
+  <div class="col-6 text-right pr-5">
+    <i class="fa fa-minus-square-o" aria-hidden="true" (click)="goodsNumMinus()"></i>&nbsp;&nbsp;&nbsp;
+    <span>{{goodsNumbers}}</span>&nbsp;&nbsp;&nbsp;
+    <i class="fa fa-plus-square-o" aria-hidden="true" (click)="goodsNumPlus()"></i>
+  </div>
+  <hr class="w-100" style="border-bottom: 1px solid #eeeeee;">
+</div>
+
+
+<nav class="navbar fixed-bottom navbar-light bg-white text-center p-0" style="height: 3.5rem">
+  <div class="col">
+    <img class="img-fluid w-75" src="../assets/img/details/details-service.png">
+  </div>
+  <div class="col">
+    <img class="img-fluid w-75" src="../assets/img/footer/shop.png">
+  </div>
+  <div class="col-4">
+    <span>加入购物车</span>
+  </div>
+  <div class="col-4 bg-danger p-3 text-white" (click)="placeGoodsCard()">
+    <span>立即购买</span>
+  </div>
+</nav>
+
+<div class="box fade" *ngIf="isPlaceOrder" (click)="hiddenGoodsCard()"></div>

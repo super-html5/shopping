@@ -1,0 +1,103 @@
+.navbar-background {
+  background-color: rgba(58, 57, 62, 1);
+}
+
+.form-control {
+  color: #b3b3b3;
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+a {
+  text-decoration: none;
+}
+
+ol, ul {
+  list-style: none
+}
+
+.wrapper {
+  height: 2rem;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.wrapper {
+  ul, ol, li {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.scroller {
+  position: absolute
+}
+
+.scroller {
+  li {
+    color: #333;
+    float: left;
+    line-height: 1rem;
+    font-size: .88rem;
+    text-align: center
+  }
+}
+
+.scroller {
+  li a {
+    color: #333;
+    display: block;
+    margin: .4rem .6rem;
+    padding: .2rem
+  }
+}
+
+.scroller {
+  li.cur {
+    a {
+      color: #1cbb9b;
+      height: 1.6rem;
+      border-bottom: 2px solid #1cbb9b
+    }
+  }
+}
+
+._cur {
+  color: #1cbb9b;
+  border-bottom: 2px solid #1cbb9b
+}
+
+.location-down {
+  line-height: 1.8rem;
+}
+
+.pt-36 {
+  padding-top: 3.6rem;
+}
+
+.img-fluid {
+  min-width: 100%;
+}
+
+.size88 {
+  font-size: .88rem;
+}
+
+.line3 {
+  line-height: 3;
+}
+
+.showAll {
+  position: absolute;
+  top: 3.4rem;
+  z-index: 1;
+  background-color: #ffffff;
+  left: 0;
+  right: 0;
+}
+
+.showAll-title {
+  margin-top: .4rem;
+  padding-top: .2rem;
+}
+
+
