@@ -1,7 +1,12 @@
 <div class="row">
   <nav class="navbar navbar-expand-lg fixed-top navbar-light navbar-background col-12">
     <form class="form-check-inline my-0 col-12">
-      <input class="form-control mr-sm-2" type="search" placeholder="按商品名称搜索" aria-label="Search">
+      <input class="form-control mr-sm-2"
+             type="search"
+             placeholder="按商品名称搜索"
+             aria-label="Search"
+             readonly
+             (click)="routeSearchCom()"/>
     </form>
   </nav>
 </div>
@@ -52,13 +57,13 @@
 
 <div class="row mx-auto">
   <div class="col-12 px-0">
-    <img class="img-fluid" src="../assets/img/index/index_one.png"/>
+    <img class="img-fluid" src="./assets/img/index/index_one.png"/>
   </div>
 </div>
 <div class="row mx-auto mt-3 mb-5">
   <div class="col-6 px-1 mb-3">
     <div class="card">
-      <img class="card-img-top" src="../assets/img/index/index_two.png" alt="Card image cap">
+      <img class="card-img-top" src="./assets/img/index/index_two.png" alt="Card image cap">
       <div class="card-body p-1">
         <p class="card-text small">
           藏香猪肉 天然有机无污染<br>
@@ -70,7 +75,7 @@
 
   <div class="col-6 px-1 mb-3">
     <div class="card">
-      <img class="card-img-top" src="../assets/img/index/index_two.png" alt="Card image cap">
+      <img class="card-img-top" src="./assets/img/index/index_two.png" alt="Card image cap">
       <div class="card-body p-1">
         <p class="card-text small">
           藏香猪肉 天然有机无污染<br>
@@ -81,7 +86,7 @@
   </div>
   <div class="col-6 px-1 mb-3">
     <div class="card">
-      <img class="card-img-top" src="../assets/img/index/index_two.png" alt="Card image cap">
+      <img class="card-img-top" src="./assets/img/index/index_two.png" alt="Card image cap">
       <div class="card-body p-1">
         <p class="card-text small">
           藏香猪肉 天然有机无污染<br>
@@ -92,7 +97,7 @@
   </div>
   <div class="col-6 px-1 mb-3">
     <div class="card">
-      <img class="card-img-top" src="../assets/img/index/index_two.png" alt="Card image cap">
+      <img class="card-img-top" src="./assets/img/index/index_two.png" alt="Card image cap">
       <div class="card-body p-1">
         <p class="card-text small">
           藏香猪肉 天然有机无污染<br>
@@ -103,7 +108,7 @@
   </div>
   <div class="col-6 px-1 mb-3">
     <div class="card">
-      <img class="card-img-top" src="../assets/img/index/index_two.png" alt="Card image cap">
+      <img class="card-img-top" src="./assets/img/index/index_two.png" alt="Card image cap">
       <div class="card-body p-1">
         <p class="card-text small">
           藏香猪肉 天然有机无污染<br>
@@ -114,7 +119,7 @@
   </div>
   <div class="col-6 px-1 mb-3">
     <div class="card">
-      <img class="card-img-top" src="../assets/img/index/index_two.png" alt="Card image cap">
+      <img class="card-img-top" src="./assets/img/index/index_two.png" alt="Card image cap">
       <div class="card-body p-1">
         <p class="card-text small">
           藏香猪肉 天然有机无污染<br>
@@ -130,9 +135,6 @@
   </div>
 </div>
 <div class="box" *ngIf="isSelected"></div>
-
-
-
 
 
 

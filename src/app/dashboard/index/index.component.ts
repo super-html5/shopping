@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {flyInOut} from '../../currency-animations';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-index',
@@ -11,7 +12,7 @@ export class IndexComponent implements OnInit {
 
   isSelected = false;
 
-  constructor() {
+  constructor(private router: Router) {
   }
 
   ngOnInit() {
@@ -27,6 +28,10 @@ export class IndexComponent implements OnInit {
 
   onIsSelected(): void {
     this.isSelected = !this.isSelected;
+  }
+
+  routeSearchCom(): void {
+    this.router.navigate(['/search']);
   }
 
 }

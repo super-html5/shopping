@@ -1,11 +1,59 @@
 <div class="row">
   <nav class="navbar navbar-expand-lg fixed-top navbar-light navbar-background col-12">
     <form class="form-check-inline my-0 col-10">
-      <input class="form-control mr-sm-2" type="search" placeholder="按商品名称搜索" aria-label="Search">
+      <input #search class="form-control mr-sm-2"
+             type="search"
+             placeholder="按商品名称搜索"
+             aria-label="Search"
+             autofocus
+      />
     </form>
-    <div class="col-2 px-0 text-secondary">取消</div>
+    <div class="col-2 px-0 text-secondary" (click)="_routerIndexCom()">取消</div>
   </nav>
 </div>
-<div class="row">
-  <div></div>
+
+<div [@flyInOut]="'in'">
+  <div class="row pt-36 mx-0 bg-white">
+    <div class="col-6">
+      <p>搜索历史</p>
+    </div>
+    <div class="col-6 text-right text-secondary">
+      <p>清除历史</p>
+    </div>
+  </div>
+
+  <div class="row mx-0 bg-white pb-3">
+    <div class="col-4 mb-3">
+      <span class="py-2 px-3 span-border-radius">干果</span>
+    </div>
+    <div class="col-4 mb-3">
+      <span class="py-2 px-3 span-border-radius">菠菜</span>
+    </div>
+    <div class="col-4 mb-3">
+      <span class="py-2 px-3 span-border-radius">猪肉</span>
+    </div>
+    <div class="col-4 mb-3">
+      <span class="py-2 px-3 span-border-radius">猪肉</span>
+    </div>
+  </div>
+  <hr class="w-100 my-0" style="border-color: #eeeeee">
+
+  <div class="row mx-0 pt-2 bg-white">
+    <div class="col-12">
+      <p>热门搜索</p>
+    </div>
+  </div>
+  <div class="row mx-0 bg-white pb-3">
+    <div class="col-4 mb-3">
+      <span class="py-2 px-3 span-border-radius">干果</span>
+    </div>
+    <div class="col-4 mb-3">
+      <span class="py-2 px-3 span-border-radius">菠菜</span>
+    </div>
+    <div class="col-4 mb-3">
+      <span class="py-2 px-3 span-border-radius">猪肉</span>
+    </div>
+  </div>
 </div>
+
+

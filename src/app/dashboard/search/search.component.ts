@@ -1,15 +1,32 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ElementRef, ViewChild} from '@angular/core';
+import {flyInOut} from '../../currency-animations';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
-  styleUrls: ['./search.component.scss']
+  styleUrls: ['./search.component.scss'],
+  animations: [flyInOut]
 })
 export class SearchComponent implements OnInit {
 
-  constructor() { }
+  @ViewChild('search') _search: ElementRef;
 
-  ngOnInit() {
+  constructor(private router: Router) {
   }
 
+  ngOnInit() {
+    this._autoFocus();
+  }
+
+  _autoFocus(): void {
+    const isAutoFocus = this._search;
+    if (isAutoFocus.nativeElement.autofocus !== true) {
+      isAutoFocus.nativeElement.focus();
+    }
+  }
+
+  _routerIndexCom(): void {
+    this.router.navigate(['/index']);
+  }
 }
