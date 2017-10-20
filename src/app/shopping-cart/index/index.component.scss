@@ -1,0 +1,56 @@
+.selsctImg {
+  width: 1rem;
+}
+
+.goods>div{
+  margin-top: .08rem;
+}
+
+.goodImg {
+  width: 70%;
+}
+
+.goodDetails {
+  margin: 0;
+  padding: 0;
+  font-size: .8rem;
+}
+
+.goodDetails > div:nth-child(1) {
+  height: 25%;
+}
+
+.goodDetails > div:nth-child(2) {
+  height: 25%;
+}
+
+.goodDetails > div:nth-child(3) {
+  height: 50%;
+  position: relative;
+}
+
+.addAndSubtract > div {
+  width: 45%;
+  position: absolute;
+}
+
+.addAndSubtract > div:nth-child(1) {
+  left: 0;
+  bottom: 0;
+}
+
+.addAndSubtract > div:nth-child(2) {
+  color:#888;
+  right: 0;
+  bottom: 6%;
+}
+
+.addAndSubtract img {
+  width: 20%;
+}
+
+.addAndSubtract input {
+  width: 30%;
+  border:none;
+  outline: none;
+}
