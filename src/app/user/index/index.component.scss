@@ -3,30 +3,22 @@ img {
 }
 .user_header{
   height: 2.6rem;
+  img{
+    width:  4.4rem;
+    margin: -2.4rem .4rem 0rem 1.4rem;
+  }
 }
-.user_header img{
-  width:  4.4rem;
-  margin: -2.4rem .4rem 0rem 1.4rem;
+
+.user_waitImg{
+  >div{
+    margin-top: 1rem;
+  }
+  img{
+    height: 1.6rem;
+  }
+  .fontGreen{
+    color: #1cbb9b;
+    font-size: .8rem;
+  }
 }
-.user_waitImg>div{
-  margin-top: 1rem;
-}
-.user_waitImg img{
-  height: 1.6rem;
-}
-.user_waitImg .fontGreen{
-  color: #1cbb9b;
-  font-size: .8rem;
-}
-.arrow{
-  display: inline-block;
-  float: right;
-  border-bottom: 1px solid;
-  border-right: 1px solid;
-  width: 12px;
-  height: 12px;
-  color: #bbb;
-  transform: rotate(-45deg);
-  margin-top: .38rem;
-  margin-rigth: 4rem;
-}
+
