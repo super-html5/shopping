@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {flyInOut} from '../../currency-animations';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-details',
@@ -13,7 +14,7 @@ export class DetailsComponent implements OnInit {
   goodsNumbers = 1;
   isPlaceOrder = false;
 
-  constructor() {
+  constructor(private router: Router) {
   }
 
   ngOnInit() {
@@ -56,5 +57,12 @@ export class DetailsComponent implements OnInit {
    */
   isCollectionGoods(): void {
     this._AuthStyleClassName = 'text-danger';
+  }
+
+  /**
+   * 路由购物车
+   */
+  goShoppingCart(): void {
+    this.router.navigate(['/shoppingCart']);
   }
 }

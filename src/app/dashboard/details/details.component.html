@@ -34,9 +34,9 @@
        role="tabpanel"
        aria-labelledby="details-tab"
   >
-    <div class="row">
-      <div class="col-12">
-        <img class="img-fluid w-100" src="./assets/img/details/details-one.png"/>
+    <div class="row mx-0">
+      <div class="col-12 px-0">
+        <img class="w-100" src="./assets/img/details/details-one.png"/>
       </div>
     </div>
     <div class="row mx-0 mt-3">
@@ -45,10 +45,10 @@
       </div>
     </div>
     <div class="row mx-0">
-      <div class="col-4 text-danger">
+      <div class="col-4 pr-0 text-danger">
         ¥<span>100.00</span>元
       </div>
-      <div class="col-4 pl-0 text-secondary line-through">
+      <div class="col-4 px-0 text-secondary line-through">
         ¥<span>200.00</span>元
       </div>
       <div [appCurrency]="_AuthStyleClassName" class="col-4 text-right pr-4 small" style="line-height: 2">
@@ -56,13 +56,13 @@
       </div>
     </div>
     <div class="row mx-0 mt-3 pb-1 text-center text-secondary small">
-      <div class="col-4">
+      <div class="col-4 px-0">
         运费：<span>免运费</span>
       </div>
-      <div class="col-4">
+      <div class="col-4 px-0">
         库存：<span>999</span>
       </div>
-      <div class="col-4">
+      <div class="col-4 px-0">
         销量：<span>2346</span>
       </div>
     </div>
@@ -82,34 +82,34 @@
 </div>
 
 
-<div class="row bg-white" [@flyInOut]="'in'" *ngIf="isPlaceOrder"
-     style="position: absolute; bottom: 3.5rem; z-index: 2">
-  <div class="col-12">
+<div class="row mx-0 bg-white absolute" [@flyInOut]="'in'" *ngIf="isPlaceOrder"
+     style="bottom: 3.5rem; z-index: 2">
+  <div class="col-12 px-0">
     <div class="media p-2">
-      <img class="d-flex mr-3 w-40" src="./assets/img/details/details-one.png" alt="Generic placeholder image">
-      <div class="media-body pt-4">
-        <span class="text-danger">
+      <img class="d-flex mr-3 w-40 align-self-center" src="./assets/img/details/details-one.png"
+           alt="Generic placeholder image">
+      <div class="media-body">
+        <div class="mb-2">[一品太白] 藏香猪肉 天然有机无污染</div>
+        <div class="text-danger">
           ¥<span>100</span>&nbsp;&nbsp;
-        </span>
-        <span class="line-through text-secondary">
-          ¥<span>200</span>
-        </span>
-        <br>
-        <span class="small">库存：<span>2346</span>
-        </span>
+          <span class="line-through text-secondary">
+            ¥<span>200</span>
+          </span>
+        </div>
+        <div class="small">库存：<span>2346</span></div>
       </div>
     </div>
   </div>
-  <hr class="w-100 pt-0 mt-0" style="border-bottom: 1px solid #eeeeee">
+  <hr class="w-100 py-0 mt-0 " style="border-bottom: 1px solid #eeeeee">
   <div class="col-6 pl-5">
     购买数量
   </div>
   <div class="col-6 text-right pr-5">
-    <i class="fa fa-minus-square-o" aria-hidden="true" (click)="goodsNumMinus()"></i>&nbsp;&nbsp;&nbsp;
-    <span>{{goodsNumbers}}</span>&nbsp;&nbsp;&nbsp;
+    <i class="fa fa-minus-square-o" aria-hidden="true" (click)="goodsNumMinus()"></i>&nbsp;&nbsp;
+    <span>{{goodsNumbers}}</span>&nbsp;&nbsp;
     <i class="fa fa-plus-square-o" aria-hidden="true" (click)="goodsNumPlus()"></i>
   </div>
-  <hr class="w-100" style="border-bottom: 1px solid #eeeeee;">
+  <hr class="w-100 mb-0" style="border-bottom: 1px solid #eeeeee;">
 </div>
 
 
@@ -117,10 +117,10 @@
   <div class="col">
     <img class="img-fluid w-75" src="./assets/img/details/details-service.png">
   </div>
-  <div class="col">
+  <div class="col" (click)="goShoppingCart()">
     <img class="img-fluid w-75" src="./assets/img/footer/shop.png">
   </div>
-  <div class="col-4">
+  <div class="col-4 px-0">
     <span>加入购物车</span>
   </div>
   <div class="col-4 bg-danger p-3 text-white" (click)="placeGoodsCard()">
