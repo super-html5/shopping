@@ -5,49 +5,50 @@
   </div>
 </div>
 
-<div class="row mx-auto pb-1">
-  <div class="col-12 bg-white py-2">
-    <div class="media">
-      <img class="selectImg align-self-center mr-2" src="./assets/img/shoppingCart/select.png" alt="">
-      <img class="align-self-center mr-1 w-30" src="./assets/img/shoppingCart/good.png" alt="">
-      <div class="media-body">
-        <div>[一品太白] 精品藏猪肉 500g 天然有机无公害</div>
-        <div class="mt-1">
-          <div class="float-left text-danger">
-            ￥<span>400.00</span>
+<div [@flyInOutX]="'in'">
+  <div class="row mx-auto pb-1">
+    <div class="col-12 bg-white py-2">
+      <div class="media">
+        <img class="selectImg align-self-center mr-2" src="./assets/img/shoppingCart/select.png" alt="">
+        <img class="align-self-center mr-1 w-30" src="./assets/img/shoppingCart/good.png" alt="">
+        <div class="media-body">
+          <div>[一品太白] 精品藏猪肉 500g 天然有机无公害</div>
+          <div class="mt-1">
+            <div class="float-left text-danger">
+              ￥<span>400.00</span>
+            </div>
+            <div class="float-right">
+              <i class="fa fa-minus-square-o" aria-hidden="true" (click)="goodsNumMinus()"></i>&nbsp;&nbsp;
+              <span>{{goodsNumbers}}</span>&nbsp;&nbsp;
+              <i class="fa fa-plus-square-o" aria-hidden="true" (click)="goodsNumPlus()"></i>
+            </div>
           </div>
-          <div class="float-right">
-            <i class="fa fa-minus-square-o" aria-hidden="true" (click)="goodsNumMinus()"></i>&nbsp;&nbsp;
-            <span>{{goodsNumbers}}</span>&nbsp;&nbsp;
-            <i class="fa fa-plus-square-o" aria-hidden="true" (click)="goodsNumPlus()"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mx-auto pb-1">
+    <div class="col-12 bg-white py-2">
+      <div class="media">
+        <img class="selectImg align-self-center mr-2" src="./assets/img/shoppingCart/select.png" alt="">
+        <img class="align-self-center mr-1 w-30" src="./assets/img/shoppingCart/good.png" alt="">
+        <div class="media-body">
+          <div>[一品太白] 精品藏猪肉 500g 天然有机无公害</div>
+          <div class="mt-1">
+            <div class="float-left text-danger">
+              ￥<span>400.00</span>
+            </div>
+            <div class="float-right">
+              <i class="fa fa-minus-square-o" aria-hidden="true" (click)="goodsNumMinus()"></i>&nbsp;&nbsp;
+              <span>{{goodsNumbers}}</span>&nbsp;&nbsp;
+              <i class="fa fa-plus-square-o" aria-hidden="true" (click)="goodsNumPlus()"></i>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<div class="row mx-auto pb-1">
-  <div class="col-12 bg-white py-2">
-    <div class="media">
-      <img class="selectImg align-self-center mr-2" src="./assets/img/shoppingCart/select.png" alt="">
-      <img class="align-self-center mr-1 w-30" src="./assets/img/shoppingCart/good.png" alt="">
-      <div class="media-body">
-        <div>[一品太白] 精品藏猪肉 500g 天然有机无公害</div>
-        <div class="mt-1">
-          <div class="float-left text-danger">
-            ￥<span>400.00</span>
-          </div>
-          <div class="float-right">
-            <i class="fa fa-minus-square-o" aria-hidden="true" (click)="goodsNumMinus()"></i>&nbsp;&nbsp;
-            <span>{{goodsNumbers}}</span>&nbsp;&nbsp;
-            <i class="fa fa-plus-square-o" aria-hidden="true" (click)="goodsNumPlus()"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <div class="row navbar fixed-bottom" style="bottom: 2.9rem;">
   <div class="col-8 p-3 bg-white text-danger text-right">
     合计：￥<span>100.00</span>

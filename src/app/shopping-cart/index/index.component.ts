@@ -1,9 +1,12 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
+import {flyInOutX} from '../../currency-animations';
+
 @Component({
   selector: 'app-index',
   templateUrl: './index.component.html',
-  styleUrls: ['./index.component.scss']
+  styleUrls: ['./index.component.scss'],
+  animations: [flyInOutX]
 })
 export class IndexComponent implements OnInit {
   goodsNumbers = 1;

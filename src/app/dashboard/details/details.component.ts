@@ -1,12 +1,12 @@
 import {Component, OnInit} from '@angular/core';
-import {flyInOut} from '../../currency-animations';
+import {flyInOut, flyInOutX} from '../../currency-animations';
 import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-details',
   templateUrl: './details.component.html',
   styleUrls: ['./details.component.scss'],
-  animations: [flyInOut]
+  animations: [flyInOut, flyInOutX]
 })
 export class DetailsComponent implements OnInit {
 

@@ -72,6 +72,18 @@ export const flyInOut = [
   ])
 ];
 
+export const flyInOutX = [
+  trigger('flyInOutX', [
+    state('in', style({transform: 'translateX(0)'})),
+    transition('void => *', [
+      style({transform: 'translateX(100%)'}),
+      animate(200)
+    ]),
+    transition('* => void', [
+      animate(100, style({transform: 'translateX(100%)'}))
+    ])
+  ])
+];
 
 // 导出动画
 export const fadeIn = [trigger('fadeIn', [transition('void => *', opts.fadeIn)])];

@@ -1,12 +1,12 @@
 import {Component, OnInit} from '@angular/core';
-import {flyInOut} from '../../currency-animations';
+import {flyInOut, flyInOutX} from '../../currency-animations';
 import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-index',
   templateUrl: './index.component.html',
   styleUrls: ['./index.component.scss'],
-  animations: [flyInOut]
+  animations: [flyInOut, flyInOutX]
 })
 export class IndexComponent implements OnInit {
 

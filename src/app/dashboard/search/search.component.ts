@@ -10,12 +10,17 @@ import {Router} from '@angular/router';
 })
 export class SearchComponent implements OnInit {
 
+  _show = false;
+
   @ViewChild('search') _search: ElementRef;
 
   constructor(private router: Router) {
   }
 
   ngOnInit() {
+    setTimeout(() => {
+      this._show = true;
+    }, 500);
     this._autoFocus();
   }
 
