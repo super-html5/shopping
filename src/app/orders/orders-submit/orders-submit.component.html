@@ -1,0 +1,54 @@
+<div [@flyInOutX]="'in'">
+  <div class="row mx-auto bg-white site">
+    <div class="col-12 py-3">
+      <div class="float-left">
+        <i class="fa fa-user-o" aria-hidden="true"></i>
+        收件人： <span class="mr-3">XXX</span>
+        收货电话： <span>XXXXXXXXXXX</span> <br/>
+        <i class="fa fa-map-marker mt-2" aria-hidden="true"></i>
+        收货地址：陕西省西安市XX区
+      </div>
+      <div class="float-right h-100">
+        <span class="arrow mt-3"></span>
+      </div>
+
+    </div>
+  </div>
+  <div class="row mx-auto bg-white py-1 mt-2">
+    <div class="col-12">
+      <div class="media">
+        <img class="w-40 mr-2 align-self-center" src="./assets/img/shoppingCart/good.png" alt="">
+        <div class="media-body">
+          <div>[一品太白] 精品藏猪肉 500g 天然有机无公害</div>
+          <div class="mt-4">
+            <div class="float-left"><span class="text-danger mr-1">￥400.00</span><span
+              style="text-decoration:line-through; color:#888;">￥600.00</span></div>
+            <div class="float-right" style=" color:#888;">X1</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mx-auto bg-white mt-1 py-2 pb-1 leaveMessage">
+    <div class="col-12">
+      <div class="float-left">买家留言 :</div>
+      <div class="float-left ml-1">
+        <input class="mb-1" type="text" placeholder="本次交易说明" value="" width="100%">
+      </div>
+    </div>
+  </div>
+  <div class="row mx-auto bg-white mt-1 p-2 subtotal">
+    <div class="col-12 text-right">
+      <div>共X件商品，小计：<span class="text-danger">￥ <span>400.00</span></span></div>
+      <div class="mt-1">优惠：<span class="text-danger">￥<span>-0.00</span> </span></div>
+    </div>
+  </div>
+</div>
+<div class="row navbar fixed-bottom m-0 p-0">
+  <div class="col-8 p-3 bg-white text-danger text-right">
+    共X件，合计：￥<span>100.00</span>
+  </div>
+  <div class="col-4 p-3 bg-danger text-white text-center">
+    提交订单
+  </div>
+</div>

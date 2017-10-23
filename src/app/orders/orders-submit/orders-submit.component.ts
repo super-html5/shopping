@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import {flyInOutX} from '../../currency-animations';
 
 @Component({
-  selector: 'app-submit',
-  templateUrl: './submit.component.html',
-  styleUrls: ['./submit.component.scss'],
+  selector: 'app-orders-submit',
+  templateUrl: './orders-submit.component.html',
+  styleUrls: ['./orders-submit.component.scss'],
   animations: [flyInOutX]
 })
-export class SubmitComponent implements OnInit {
+export class OrdersSubmitComponent implements OnInit {
 
   constructor() { }
 
