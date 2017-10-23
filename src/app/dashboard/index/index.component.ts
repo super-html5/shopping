@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {flyInOut, flyInOutX} from '../../currency-animations';
 import {Router} from '@angular/router';
+import {Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-index',
@@ -12,10 +13,12 @@ export class IndexComponent implements OnInit {
 
   isSelected = false;
 
-  constructor(private router: Router) {
+  constructor(private router: Router,
+              private title: Title) {
   }
 
   ngOnInit() {
+    this.title.setTitle('太白优选商城');
     $('.wrapper').navbarscroll();
 
     // $('#demo05').navbarscroll({
