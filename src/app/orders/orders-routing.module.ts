@@ -13,7 +13,7 @@ const routes: Routes = [
   {path: 'submit', component: OrdersSubmitComponent},
   {path: 'pendingPay', component: OrdersPendingPayComponent},
   {path: 'pendingReceive', component: OrdersPendingReceiveComponent},
-  {path: 'pendingDeliver', component: OrdersPendingDeliverComponent},
+  {path: 'pendingDeliver', component: OrdersPendingDeliverComponent}
 ];
 
 @NgModule({
