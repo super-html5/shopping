@@ -77,7 +77,7 @@ export const flyInOutX = [
     state('in', style({transform: 'translateX(0)'})),
     transition('void => *', [
       style({transform: 'translateX(100%)'}),
-      animate(200)
+      animate(styles.inOutBack, style({transform: '*'}))
     ]),
     transition('* => void', [
       animate(100, style({transform: 'translateX(100%)'}))
