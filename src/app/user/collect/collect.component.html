@@ -1,0 +1,22 @@
+<div class="row py-1 mx-auto">
+  <div class="col-6 text-right">
+    <span class="pb-1" [class.special]="isGoods" (click)="changeGoods()">商品</span>
+  </div>
+  <div class="col-6 text-left">
+    <span class="pb-1" [class.special]="!isGoods" (click)="changeContents()">内容</span>
+  </div>
+</div>
+<div *ngIf="isGoods" [@flyInOutX]="'in'">
+  <app-goods></app-goods>
+</div>
+<div *ngIf="!isGoods" [@flyInOutX]="'in'">
+  <app-contents></app-contents>
+</div>
+<div class="row navbar fixed-bottom m-0 p-0">
+  <div class="col-8 p-3 bg-white">
+    <img class="selectImg mr-2 mb-1" src="./assets/img/shoppingCart/unselect.png" alt="">全选
+  </div>
+  <div class="col-4 p-3 bg-secondary text-white text-center">
+    删除
+  </div>
+</div>

@@ -47,7 +47,7 @@ export class IndexComponent implements OnInit {
     }
   }
 
-  changeSubmit(): void {
+  linkToSubmit(): void {
     this.router.navigate(['/orders/submit']);
   }
 }
