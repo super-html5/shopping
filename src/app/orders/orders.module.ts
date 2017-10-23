@@ -5,6 +5,9 @@ import {ShareModule} from '../share/share.module';
 
 import {OrdersConfirmComponent} from './orders-confirm/orders-confirm.component';
 import {OrdersPaymentComponent} from './orders-payment/orders-payment.component';
+import {OrdersPendingPayComponent} from './orders-pending-pay/orders-pending-pay.component';
+import {OrdersPendingReceiveComponent} from './orders-pending-receive/orders-pending-receive.component';
+import { OrdersPendingDeliverComponent } from './orders-pending-deliver/orders-pending-deliver.component';
 
 @NgModule({
   imports: [
@@ -12,7 +15,13 @@ import {OrdersPaymentComponent} from './orders-payment/orders-payment.component'
     ShareModule,
     OrdersRoutingModule
   ],
-  declarations: [OrdersConfirmComponent, OrdersPaymentComponent]
+  declarations: [
+    OrdersConfirmComponent,
+    OrdersPaymentComponent,
+    OrdersPendingPayComponent,
+    OrdersPendingReceiveComponent,
+    OrdersPendingDeliverComponent
+  ]
 })
 export class OrdersModule {
 }
