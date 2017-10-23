@@ -48,6 +48,6 @@ export class IndexComponent implements OnInit {
   }
 
   changeSubmit(): void {
-    this.router.navigate(['/shoppingCart/submit']);
+    this.router.navigate(['/orders/submit']);
   }
 }
