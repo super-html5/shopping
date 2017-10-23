@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {flyInOutX} from '../../currency-animations';
+import {Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-orders-submit',
@@ -9,9 +10,11 @@ import {flyInOutX} from '../../currency-animations';
 })
 export class OrdersSubmitComponent implements OnInit {
 
-  constructor() { }
+  constructor(private title: Title) {
+  }
 
   ngOnInit() {
+    this.title.setTitle('确认订单');
   }
 
 }

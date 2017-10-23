@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import {Component, OnInit} from '@angular/core';
+import {Title} from '@angular/platform-browser';
 @Component({
   selector: 'app-address',
   templateUrl: './address.component.html',
@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddressComponent implements OnInit {
 
-  constructor() { }
+  constructor(private title: Title) {
+  }
 
   ngOnInit() {
+    this.title.setTitle('新增收货地址');
   }
 
 }

@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {flyInOutX} from '../../currency-animations';
+import {Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-collect',
@@ -10,10 +11,11 @@ import {flyInOutX} from '../../currency-animations';
 export class CollectComponent implements OnInit {
   isGoods: boolean = true;
 
-  constructor() {
+  constructor(private title: Title) {
   }
 
   ngOnInit() {
+    this.title.setTitle('我的收藏');
   }
 
   changeContents(): void {
@@ -23,4 +25,6 @@ export class CollectComponent implements OnInit {
   changeGoods(): void {
     this.isGoods = true;
   }
+
+
 }

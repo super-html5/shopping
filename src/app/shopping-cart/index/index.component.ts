@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {flyInOutX} from '../../currency-animations';
+import {Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-index',
@@ -13,10 +14,12 @@ export class IndexComponent implements OnInit {
   showNum: boolean = false;
   changeNumStatus: string = '编辑';
 
-  constructor(private router: Router) {
+  constructor(private router: Router,
+              private title: Title) {
   }
 
   ngOnInit() {
+    this.title.setTitle('购物车');
   }
 
   /**
