@@ -24,9 +24,10 @@
        id="details"
        role="tabpanel"
        aria-labelledby="details-tab"
-  >
-    <div class="row py-1 mt-1 bg-white mx-auto">
-      <div class="col-12">
+       style="overflow: hidden;">
+    <div [ngClass]="{moveClass: isMove}" class="row py-1 mt-1 bg-white mx-auto" (touchstart)="touchStart($event)"
+         (touchmove)="touchmove($event)">
+      <div class="col-12" style="position:relative;transform: translateX(0px);transition: 0.5s;">
         <div class="media">
           <img class="align-self-center mr-1 w-30" src="./assets/img/shoppingCart/good.png" alt="">
           <div class="media-body">
@@ -38,6 +39,7 @@
             </div>
           </div>
         </div>
+        <div class="text-light bg-secondary text-center" style="position: absolute;top: -3px;right: -80px;width: 80px;height: 82px;line-height: 82px;">删除</div>
       </div>
     </div>
     <div class="row py-1 mt-1 bg-white mx-auto">

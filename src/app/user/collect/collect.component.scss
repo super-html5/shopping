@@ -8,3 +8,8 @@
 a {
   color: #868e96;
 }
+
+.moveClass {
+  transform: translateX(-80px);
+  transition: 0.5s;
+}

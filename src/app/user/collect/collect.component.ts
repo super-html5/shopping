@@ -9,22 +9,29 @@ import {Title} from '@angular/platform-browser';
   animations: [flyInOutX]
 })
 export class CollectComponent implements OnInit {
-  isGoods: boolean = true;
+  isMove: boolean = false;
+  startX: number;
+  moveX: number;
 
   constructor(private title: Title) {
   }
 
   ngOnInit() {
     this.title.setTitle('我的收藏');
+    document.addEventListener('click', () => {
+      this.isMove = false;
+    });
   }
 
-  changeContents(): void {
-    this.isGoods = false;
+  touchStart(evt): void {
+    this.startX = evt.targetTouches[0].clientX;
   }
 
-  changeGoods(): void {
-    this.isGoods = true;
+  touchmove(evt): void {
+    this.moveX = evt.targetTouches[0].clientX - this.startX;
+    if (Math.abs(this.moveX) > 30) {
+      this.isMove = true;
+    }
   }
-
 
 }
