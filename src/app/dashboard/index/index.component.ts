@@ -19,14 +19,11 @@ export class IndexComponent implements OnInit {
 
   ngOnInit() {
     this.title.setTitle('太白优选商城');
-    $('.wrapper').navbarscroll();
-
-    // $('#demo05').navbarscroll({
-    //   defaultSelect: 6,
-    //   endClickScroll: function (obj) {
-    //     console.log(obj.text());
-    //   }
-    // });
+    $('.wrapper').navbarscroll({
+      endClickScroll: function (obj) {
+        console.log(obj.text());
+      }
+    });
   }
 
   onIsSelected(): void {
